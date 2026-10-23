@@ -1,0 +1,51 @@
+### Create a valid link
+POST http://localhost:5000/api/links
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.wikipedia.org"
+}
+
+### Create an invalid link
+POST http://localhost:5000/api/links
+Content-Type: application/json
+
+{
+  "originalUrl": "hello"
+}
+
+### Get all links
+GET http://localhost:5000/api/links
+
+### Get stats for a specific link
+GET http://localhost:5000/api/links/k-DM4Dq/stats
+
+### Delete a link
+DELETE http://localhost:5000/api/links/abc
+
+#### Health check
+GET http://localhost:5000/api/health
+
+### Create link that expires in 7 days
+POST http://localhost:5000/api/links
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.wikipedia.org",
+  "expiresInDays": 7
+}
+
+### Create a link that expires in about 8 seconds
+POST http://localhost:5000/api/links
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.wikipedia.org",
+  "expiresInDays": 0.0001
+}
+
+### Get one link
+GET http://localhost:5000/api/links/U1wczYQ
+
+### Get a fake link
+GET http://localhost:5000/api/links/abc
