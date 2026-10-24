@@ -9,7 +9,7 @@ const app=express();
 app.set('trust proxy', 1);
 const PORT  =process.env.PORT||5000;
 
-app.use(cors({ origin: 'https://linkvault-ruddy.vercel.app' }));
+app.use(cors({ origin: ['https://linkvault-ruddy.vercel.app', 'http://localhost:5173'] }));
 app.use(express.json());
 
 app.get ('/api/health', async (req, res) => {

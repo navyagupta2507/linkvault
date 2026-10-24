@@ -70,4 +70,3 @@ A URL shortener with click analytics, built with the MERN stack.
 - The free Render server sleeps after inactivity, so the first request can take about 50 seconds.
 - When a link expires and MongoDB's TTL index deletes it, its click records stay in the database as orphans.
 - Expiry and stats are available through the API only, not yet in the UI.
-- CORS allows only the deployed frontend, so local development needs `localhost:5173` added to the allowed origins.
