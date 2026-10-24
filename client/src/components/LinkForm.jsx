@@ -56,8 +56,8 @@ function LinkForm() {
     {result && (
   <p>
     Short link:{' '}
-    <a href={`{API}/{result.shortCode}`} target="_blank">
-      ${API}/{result.shortCode}
+    <a href={`${API}/${result.shortCode}`} target="_blank">
+      {API}/{result.shortCode}
     </a>
   </p>
 )}
