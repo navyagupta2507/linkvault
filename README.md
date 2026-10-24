@@ -72,3 +72,4 @@ A URL shortener with click analytics, built with the MERN stack.
 - The free Render server sleeps after inactivity, so the first request can take about 50 seconds.
 - When a link expires and MongoDB's TTL index deletes it, its click records stay in the database as orphans.
 - Expiry and stats are available through the API only, not yet in the UI.
+- Short links use the Render domain; a production version would use a short custom domain.
