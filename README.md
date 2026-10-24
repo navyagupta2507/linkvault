@@ -2,6 +2,8 @@
 
 A URL shortener with click analytics, built with the MERN stack.
 
+![LinkVault screenshot](docs/screenshot.png)
+
 ## Live Demo
 
 - Frontend: https://linkvault-ruddy.vercel.app
